@@ -1,0 +1,44 @@
+<div class="container">
+    
+    <div class="containerHead">
+        <h2>LogBlock</h2>
+        
+        <div style="float: right; margin-right: 10px; margin-top: 10px;">
+            <span class="ui-icon ui-icon-circle-triangle-s" id="logBlockExpand" style="cursor: pointer;" title="Toggle Visibility"></span>
+        </div>
+    </div>
+    
+    <div id="logBlockControls" style="display: none;">
+        
+        <div class="containerHead">
+            <h2>General Ore Lookup</h2><img id="logBlockAllPlayersGeneralAjaxLoader" src="image.php?file=ajax.gif" height="16" width="16" class="ajaxLoader" style="visibility: hidden; margin-top: 6px;" />
+        </div>
+        
+        Lookup player 
+        <input type="text" placeholder="player name" id="logBlockAllPlayersGeneralPlayer" class="playerSearchInput" title="leave blank to search all players">
+        that destroyed
+        
+        <select id="logBlockAllPlayersGeneralBlock">
+            <option>GOLD_ORE</option>
+            <option>IRON_ORE</option>
+            <option>COAL_ORE</option>
+            <option>LAPIS_ORE</option>
+            <option>DIAMOND_ORE</option>
+            <option>REDSTONE_ORE</option>
+            <option>EMERALD_ORE</option>
+        </select>
+        
+        since
+        <input type="text" id="logBlockAllPlayersGeneralSince" value="1440" style="width: 50px;" title="For reference, there are 1440 minutes in a day">
+        minutes.
+        
+        <button class="btn-green" id="logBlockAllPlayersGeneralButton">Lookup</button>
+        <button class="btn-black" id="logBlockAllPlayersGeneralClear" style="float: right;">Clear</button>
+        
+        <div id="logBlockAllPlayersGeneralOutput" style="max-height: 300px; overflow-y: auto; overflow-x: hidden;"></div>
+        
+    </div>
+    
+</div>
+
+<script type="text/javascript" src="jscript.php?file=jayfella.logblock.js"></script>

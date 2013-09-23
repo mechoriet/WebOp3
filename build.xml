@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See commented blocks below for -->
+<!-- some examples of how to customize the build. -->
+<!-- (If you delete it and reopen the project it will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Test only use this build script if -->
+<!-- the Compile on Save feature is turned off for the project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="mcmoderator" default="default" basedir=".">
+    <description>Builds, tests, and runs the project mcmoderator.</description>
+    <import file="nbproject/build-impl.xml"/>
+    
+    <target name="-post-jar">
+        <jar destfile="${dist.jar}" update="true">
+            
+            
+            
+            <zipfileset src="dist/lib/websocket-api-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/websocket-client-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/websocket-common-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/websocket-server-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/websocket-servlet-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            
+            <zipfileset src="dist/lib/jetty-annotations-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-client-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-continuation-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-deploy-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-http-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-io-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-jaas-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-jmx-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-jndi-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-plus-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-proxy-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-rewrite-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-security-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-server-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-servlet-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-servlets-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-util-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-webapp-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/jetty-xml-9.0.5.v20130815.jar" excludes="META-INF/*" />
+            <zipfileset src="dist/lib/servlet-api-3.0.jar" excludes="META-INF/*" />
+            
+            <zipfileset src="${dist.jar}" includes="**/*.class" />
+            
+        </jar>
+        
+        
+        
+        <copy file="${dist.jar}" todir="D:\\BukkitTest\\Plugins\\"/>
+	
+    </target>
+    
+</project>

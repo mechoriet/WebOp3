@@ -1,0 +1,5 @@
+name: WebOp
+main: me.jayfella.webop3.WebOp3Plugin
+version: 3.0.0
+author: jayfella
+softdepend: [ "LogBlock", "Essentials", "Vault" ]
